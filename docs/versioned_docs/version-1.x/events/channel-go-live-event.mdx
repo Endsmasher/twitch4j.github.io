@@ -24,7 +24,7 @@ Requires the specific channels to be registered with the TwitchClient Helper. Se
 
 ```java
 eventManager.onEvent(ChannelGoLiveEvent.class, event -> {
-	System.out.println("[" + event.getChannel().getName() + "] went live with title " + event.getTitle() + " on game " + event.getGameId() + "!");
+	System.out.println("[" + event.getChannel().getName() + "] went live with title " + event.getStream().getTitle() + " on game " + event.getStream().getGameId() + "!");
 });
 ```
 
